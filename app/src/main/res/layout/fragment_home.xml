@@ -19,8 +19,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
-            android:text="Bienvenido @user a JMedic's"
-            android:textColor="@color/Primario_Dark"
+            android:text="Bienvenido @user"
+            android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="italic"
             tools:ignore="MissingConstraints"/>
@@ -34,7 +34,7 @@
         <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:text="citas"
+            android:text="Empezar"
             android:gravity="end"
             tools:ignore="MissingConstraints"
             app:layout_constraintEnd_toEndOf="parent"/>

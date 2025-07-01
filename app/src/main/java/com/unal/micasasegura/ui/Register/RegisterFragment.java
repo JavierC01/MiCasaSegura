@@ -14,7 +14,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.unal.jmedic.databinding.FragmentRegisterBinding;
+import com.unal.micasasegura.databinding.FragmentRegisterBinding;
 
 public class RegisterFragment extends Fragment implements View.OnClickListener {
     private FragmentRegisterBinding binding;
@@ -22,7 +22,7 @@ public class RegisterFragment extends Fragment implements View.OnClickListener {
         RegisterViewModel registerViewModel = new ViewModelProvider(this).get(RegisterViewModel.class);
         binding = FragmentRegisterBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-        EditText Textcedula = binding.InputCedula;
+        EditText Textcorreo = binding.InputCorreo;
         EditText Textpassword = binding.Inputpassword;
         EditText Textnombre = binding.InputNombre;
         Button button = binding.registerbttn;
@@ -35,8 +35,8 @@ public class RegisterFragment extends Fragment implements View.OnClickListener {
                     public void onClick(View v) {
                         FirebaseDatabase database = FirebaseDatabase.getInstance();
                         DatabaseReference myRef = database.getReference("users");
-                        myRef.child("doctor").child(Textcedula.getText().toString()).child("nombre").setValue(Textnombre.getText().toString());
-                        myRef.child("doctor").child(Textcedula.getText().toString()).child("password").setValue(Textpassword.getText().toString());
+                        myRef.child("doctor").child(Textcorreo.getText().toString()).child("nombre").setValue(Textnombre.getText().toString());
+                        myRef.child("doctor").child(Textcorreo.getText().toString()).child("password").setValue(Textpassword.getText().toString());
                     }
                 });
             }

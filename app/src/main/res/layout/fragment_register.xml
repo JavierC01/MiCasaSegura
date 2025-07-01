@@ -8,9 +8,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:alpha="0.7"
-        android:background="@color/Primario">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -21,16 +19,16 @@
             android:padding="28dp">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:importantForAccessibility="no"
-                android:src="@drawable/baseline_emoji_people_24" />
+                android:src="@drawable/logo" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
-                android:text="JMedic's"
+                android:text="Mi Casa Segura"
                 android:textColor="@color/black"
                 android:textSize="32sp"
                 android:textStyle="bold"
@@ -49,14 +47,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="30dp">
+        android:padding="30dp"
+        android:background="@color/Secundario">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bienvenido a JMedic's"
+            android:text="Aquí comienza tu sueño"
             android:textColor="@color/Primario_Dark"
-            android:textSize="30dp"/>
+            android:textStyle="italic"
+            android:textSize="25dp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -70,10 +70,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cedula de ciudadania"
-            android:alpha="0.7"/>
+            android:text="Correo electronico"/>
         <EditText
-            android:id="@+id/InputCedula"
+            android:id="@+id/InputCorreo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableEnd="@drawable/done_icon"/>
@@ -84,8 +83,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre"
-            android:alpha="0.7"/>
+            android:text="Nombre"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -98,8 +96,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Contraseña"
-            android:alpha="0.7"/>
+            android:text="Contraseña"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -115,7 +112,7 @@
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Soy doctor"
+                android:text="Guarda mis datos"
                 android:id="@+id/DoctorCheck"/>
 
         </RelativeLayout>
