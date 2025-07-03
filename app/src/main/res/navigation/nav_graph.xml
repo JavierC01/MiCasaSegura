@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/HomeScreenFragment"
-        android:name="com.unal.jmedic.ui.HomeScreen.HomeScreenFragment"
+        android:name="com.unal.micasasegura.ui.Home.HomeFragment"
         android:label="HomeScreen"
         tools:layout="@layout/fragment_home_screen">
         <action
@@ -20,7 +20,7 @@
 
     <fragment
         android:id="@+id/RegisterFragment"
-        android:name="com.unal.jmedic.ui.Register.RegisterFragment"
+        android:name="com.unal.micasasegura.ui.Register.RegisterFragment"
         android:label="Registro"
         tools:layout="@layout/fragment_register">
 
@@ -31,7 +31,7 @@
 
     <fragment
         android:id="@+id/LoginFragment"
-        android:name="com.unal.jmedic.ui.Login.LoginFragment"
+        android:name="com.unal.micasasegura.ui.Login.LoginFragment"
         android:label="Login"
         tools:layout="@layout/fragment_login">
         <action
@@ -41,7 +41,7 @@
 
     <fragment
         android:id="@+id/HomeFragment"
-        android:name="com.unal.jmedic.ui.Home.HomeFragment"
+        android:name="com.unal.micasasegura.ui.Home.HomeFragment"
         android:label="Home"
         tools:layout="@layout/fragment_home"/>
 
